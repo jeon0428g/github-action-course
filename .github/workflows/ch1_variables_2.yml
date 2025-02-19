@@ -18,4 +18,17 @@ jobs:
       run: |  
         echo "Job: $GITHUB_JOB"
         echo "Run ID : $GITHUB_RUN_ID"
- 
+    - name: Step 3
+      run: |
+        echo "GITHUB_ACTION: $GITHUB_ACTION"
+        echo "GITHUB_ACTION_PATH: $GITHUB_ACTION_PATH"
+        echo "GITHUB_ACTOR: $GITHUB_ACTOR"
+        echo "GITHUB_ACTOR_ID: $GITHUB_ACTOR_ID"
+        echo "GITHUB_ENV: $GITHUB_ENV"
+        echo "GITHUB_EVENT_NAME: $GITHUB_EVENT_NAME"
+        echo "GITHUB_JOB: $GITHUB_JOB"
+        echo "GITHUB_REPOSITORY: $GITHUB_REPOSITORY"
+        echo "GITHUB_WORKFLOW: $GITHUB_WORKFLOW"
+        echo "RUNNER_ARCH: $RUNNER_ARCH"
+        echo "RUNNER_NAME: $RUNNER_NAME"
+        echo "RUNNER_OS: $RUNNER_OS"
