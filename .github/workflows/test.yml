@@ -8,6 +8,10 @@ jobs:
     steps:
     - name: test step
       run: |
+        echo "github.event": ${{github.event}}"
+        echo "github.event.issue": ${{github.event.issue}}"
+        echo "github.event.issue.labels": ${{github.event.issue.labels}}"
+        echo "github.event.issue.labels.*.name": ${{github.event.issue.labels.*.name}}"
         echo "GITHUB_ACTION: $GITHUB_ACTION"
         echo "GITHUB_ACTION_PATH: $GITHUB_ACTION_PATH"
         echo "GITHUB_ACTOR: $GITHUB_ACTOR"
