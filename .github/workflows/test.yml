@@ -25,4 +25,4 @@ jobs:
         echo "github.ref: ${{github.ref}}"
     - name: test step2
       run: |
-        echo "github.event": ${{toJSON(github.event)}}"
+        echo "github.event: ${{toJSON(github.event)}}"
