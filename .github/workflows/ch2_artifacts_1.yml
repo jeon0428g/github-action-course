@@ -13,7 +13,7 @@ jobs:
         echo "UUID: ${{ steps.uuid.outputs.uuid }}"
         echo "${{ steps.uuid.outputs.uuid }}" > uuid.txt
     - name: Upload UUID
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: uuid
         path: uuid.txt
@@ -22,7 +22,7 @@ jobs:
     needs: job-1
     steps:
     - name: Download UUID
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: uuid
     - name: Print UUID
