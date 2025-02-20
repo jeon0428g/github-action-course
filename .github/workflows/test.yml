@@ -22,6 +22,7 @@ jobs:
         echo "RUNNER_OS: $RUNNER_OS"
         echo "github.repository: ${{github.repository}}"
         echo "github.event_name: ${{github.event_name}}"
+        echo "github.workflow: ${{github.workflow}}"
         echo "github.ref: ${{github.ref}}"
     - name: test step2
       run: |
