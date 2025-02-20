@@ -6,9 +6,8 @@ jobs:
   build_test:
     runs-on: ubuntu-latest
     steps:
-    - name: test step
+    - name: test step1
       run: |
-        echo "github.event": ${jq. <<< '${{toJSON(github.event)}}'}"
         echo "GITHUB_ACTION: $GITHUB_ACTION"
         echo "GITHUB_ACTION_PATH: $GITHUB_ACTION_PATH"
         echo "GITHUB_ACTOR: $GITHUB_ACTOR"
@@ -24,3 +23,6 @@ jobs:
         echo "github.repository: ${{github.repository}}"
         echo "github.event_name: ${{github.event_name}}"
         echo "github.ref: ${{github.ref}}"
+    - name: test step2
+      run: |
+        echo "github.event": ${{toJSON(github.event)}}"
