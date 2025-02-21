@@ -27,7 +27,6 @@ jobs:
         echo "github.ref: ${{github.ref}}"
         echo "github.sha: ${{github.sha}}"
         echo "secrets.GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}"
-        echo "home: ${{HOME}}"
     - name: test step2
       run: |
         echo "github: ${{toJSON(github)}}"
