@@ -7,17 +7,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jihyungSong/github-action-course.git"
+    "url": "git+https://github.com/jeon0428g/github-action-course.git"
   },
   "keywords": [
     "human",
     "cat",
     "humancat"
   ],
-  "author": "jihyungSong",
+  "author": "jeon0428g",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jihyungSong/github-action-course/issues"
+    "url": "https://github.com/jeon0428g/github-action-course/issues"
   },
-  "homepage": "https://github.com/jihyungSong/github-action-course#readme"
+  "homepage": "https://github.com/jeon0428g/github-action-course#readme"
 }
