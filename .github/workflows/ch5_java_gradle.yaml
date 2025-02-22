@@ -21,7 +21,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Archive build artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: java-build-artifacts
         path: app/build/libs
@@ -34,7 +34,7 @@ jobs:
       id-token: write
     steps:
     - name: Download build artifacts
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v3
       with:
         name: java-build-artifacts
     - name: Setup AWS Credentials
